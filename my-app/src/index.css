@@ -3,7 +3,6 @@ body {
   padding: 0;
   font-family: sans-serif;
   margin-top: 48px;
-  height: 2000px;
 }
 
 #navContainer {
@@ -28,7 +27,7 @@ body {
   backdrop-filter: saturate(180%) blur(20px);
 }
 
-#navContainer ul {
+#navContainer ul.desktopNav, #navContainer ul.mobileNav {
   margin: 0 auto;
   padding: 0;
   list-style-type: none;
@@ -38,11 +37,11 @@ body {
   justify-content: space-between;
 }
 
-#navContainer ul li {
+#navContainer ul.desktopNav li, #navContainer ul.mobileNav li {
   display: inline-block;
 }
 
-#navContainer ul li a {
+#navContainer ul.desktopNav li a, #navContainer ul.mobileNav li a {
   font-size: 14px;
     line-height: 3.14286;
     font-weight: 400;
@@ -62,4 +61,20 @@ body {
     transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
     -webkit-tap-highlight-color: transparent;
     outline-offset: -7px;
+}
+
+#navContainer ul.desktopNav li a:hover, #navContainer ul.mobileNav li a:hover {
+  opacity: .65;
+}
+
+@media (max-width: 768px) {
+  #navContainer ul.desktopNav {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  #navContainer ul.mobileNav {
+    display: none;
+  }
 }

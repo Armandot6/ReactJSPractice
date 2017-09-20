@@ -7,7 +7,7 @@ export default class Logo extends Component {
   render() {
     return (
       <a href="/">
-        Logo
+        <img src="https://www.apple.com/ac/globalnav/3/en_US/images/globalnav/apple/image_large.svg" />
       </a>
     );
   }

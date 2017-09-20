@@ -5,8 +5,8 @@ import React, { Component } from 'react';
 export default class Search extends Component {
   render() {
     return (
-      <a href="">
-        s
+      <a href="#">
+        <img src="https://www.apple.com/ac/globalnav/3/en_US/images/globalnav/search/image_large.svg" />
       </a>
     );
   }

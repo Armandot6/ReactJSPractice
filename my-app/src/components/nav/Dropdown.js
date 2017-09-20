@@ -6,7 +6,7 @@ export default class Dropdown extends Component {
   render() {
     return (
       <a href="#">
-        d
+        <img src="https://www.apple.com/ac/globalnav/3/en_US/images/globalnav/bag/image_large.svg" />
       </a>
     );
   }

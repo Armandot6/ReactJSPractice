@@ -10,7 +10,8 @@ export default class NavContainer extends Component {
   render() {
     return (
       <nav id="navContainer">
-        <ul>
+
+        <ul className="desktopNav">
           <li><Logo /></li>
           <li><a href="#">Mac</a></li>
           <li><a href="#">iPad</a></li>
@@ -21,6 +22,15 @@ export default class NavContainer extends Component {
           <li><a href="#">Support</a></li>
           <li><Search /></li>
           <li><Dropdown /></li>
+        </ul>
+        <ul className="mobileNav">
+          <li><a href="#">
+            --
+          </a></li>
+          <li><Logo /></li>
+          <li><a href="#">
+            <img src="https://www.apple.com/ac/globalnav/3/en_US/images/globalnav/bag/image_large.svg" />
+          </a></li>
         </ul>
       </nav>
     );
