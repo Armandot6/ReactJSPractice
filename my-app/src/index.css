@@ -78,3 +78,39 @@ body {
     display: none;
   }
 }
+
+.sectionContainer {
+  display: block;
+width: 100%;
+background: #fafafa;
+border-bottom: 12px solid #fff;
+}
+
+
+.sectionContainer figure {
+margin: 0 auto;
+width: 561px;
+height: 395px;
+background-size: 561px 395px;
+background-repeat: no-repeat;
+background-image: url(https://images.apple.com/v/home/dk/images/tier-one-heroes/iphone-8/iphone_8_large.jpg);
+}
+
+.sectionContainer h2 {
+  font-size: 56px;
+    line-height: 1.07143;
+    font-weight: 600;
+    letter-spacing: -.005em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    color: #111;
+}
+
+.sectionContainer h3 {
+  font-size: 27px;
+line-height: 1.14815;
+font-weight: 400;
+letter-spacing: .008em;
+font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+margin-top: 6px;
+      color: #111;
+}
