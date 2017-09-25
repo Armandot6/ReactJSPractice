@@ -4,12 +4,18 @@ import Logo from './Logo.js';
 import Search from './Search.js';
 import Dropdown from './Dropdown.js';
 import DropdownMenu from './DropdownMenu.js';
+import MobileDropdownMenu from './MobileDropdownMenu.js';
 import SearchInput from './SearchInput.js';
 
 
 // Main app container
 export default class NavContainer extends Component {
   render() {
+    let myFunction = function() {
+    document.getElementById("mobileDropdownMenu").classList.toggle("mobileDropdownMenu-hidden");
+    document.getElementById("mobileDropdown").classList.toggle("trans");
+    document.getElementById('navContainer').classList.toggle("bgColor");
+    }
     return (
       <nav id="navContainer">
         <div>
@@ -26,10 +32,14 @@ export default class NavContainer extends Component {
             <li><Dropdown /></li>
           </ul>
           <ul className="mobileNav">
-            <li><a href="#">--</a></li>
+            <li><button id="mobileDropdown" onClick={myFunction} className="">
+              <span className="top"></span>
+              <span className="bottom"></span>
+            </button></li>
             <li><Logo /></li>
             <li><Dropdown /></li>
           </ul>
+          <MobileDropdownMenu />
           <DropdownMenu />
           <SearchInput />
         </div>

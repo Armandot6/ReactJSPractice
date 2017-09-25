@@ -6,9 +6,17 @@ import React, { Component } from 'react';
 export default class FooterContiner extends Component {
   render() {
     return (
-      <div className="container">
-        Footer
-      </div>
+      <footer className="footerContainer">
+        <div className="col-5">
+          <h4>Learn</h4>
+          <ul>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+          </ul>
+        </div>
+      </footer>
     );
   }
 }

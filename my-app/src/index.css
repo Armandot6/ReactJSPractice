@@ -490,13 +490,12 @@
   }
 
   #searchInput {
-    background: #1E1D1C;
+    background: #000;
     position: absolute;
     top: 0;
     left: 50px;
     right: 0;
     z-index: 1;
-    display: none;
   }
 
   #searchContainer {
@@ -534,9 +533,14 @@
     padding: 6px;
     width: 100%;
     margin: 3px 0 0 30px;
-    background: #1E1D1C;
+    background: #000;
     border: none;
     font-size: 22px;
+    color: #fff;
+  }
+
+  .searchInputContainer input:focus {
+    outline: none !important;
   }
 
   .searchInputContainer button {
@@ -581,6 +585,12 @@
     height: 100%;
   }
 
+    .closeContainer span {
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+    }
+
   .closeLeft {
     -webkit-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
@@ -618,3 +628,99 @@
     top: 11px;
     z-index: 1;
   }
+
+
+button#mobileDropdown {
+  display: block;
+  width: 44px;
+  height: 44px;
+  background: transparent;
+  border: none;
+}
+
+button#mobileDropdown > span {
+  height: 1px;
+  width: 15px;
+  display: block;
+  background-color: #fff;
+  margin: 5px auto;
+  transition: .25s ease transform;
+}
+
+#mobileDropdown:focus, #mobileDropdown:active {border: none;}
+
+
+/* OPEN MOBILE MENU */
+button.trans > span {
+  margin: 0 auto !important;
+}
+button.trans .top {
+  transform: rotate(-45deg);
+}
+
+button.trans .bottom {
+  transform: rotate(45deg);
+  margin-top: -1px;
+}
+
+#mobileDropdownMenu {
+  background-color: #000;
+    padding: 0 20px 20px;
+    color: #fff;
+    position: absolute;
+    top: 44px;
+    left: 0;
+    right: 0;
+}
+
+#mobileDropdownMenu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-left: 20px;
+
+}
+
+#mobileDropdownMenu ul li {
+  margin: 0;
+  padding: 10px 0;
+  border-bottom: 1px solid #333;
+}
+
+#mobileDropdownMenu ul li a {
+  letter-spacing: -.005em;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: #fff;
+  margin: 0;
+  text-decoration: none;
+}
+
+.mobileDropdownMenu-hidden {
+  display: none;
+}
+
+
+.bgColor {
+  background-color: #000 !important;
+}
+
+.searchHidden {
+  display: none;
+}
+
+
+.ftr__list {
+  border:1px solid #ddd;
+}
+
+
+@media only screen and (max-width : 767px) {
+
+/**nav-expand for footer with head and ul**/
+.nav-folderized .nav h4 { cursor: pointer; }
+.nav-folderized ul { max-height: 0; overflow:hidden; transition: max-height 1s ease-out; }
+.nav-folderized .nav h4:after { content: "+"; float: right; }
+.nav-folderized .nav.open h4:after { content: "-"; }
+.nav-folderized .nav.open ul { height:auto; max-height: 500px; transition: max-height 1s ease-in !important; }
+/**nav-expand for footer with head and ul**/
+}
