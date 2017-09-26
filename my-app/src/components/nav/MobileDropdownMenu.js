@@ -14,7 +14,6 @@ export default class MobileDropdownMenu extends Component {
             <li><a href="#">TV</a></li>
             <li><a href="#">Music</a></li>
             <li><a href="#">Support</a></li>
-            <li><input type="text" /></li>
           </ul>
         </nav>
       </aside>
